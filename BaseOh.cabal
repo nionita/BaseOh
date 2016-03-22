@@ -33,7 +33,8 @@ executable test
   main-is:             Test.hs
   -- other-modules:       Optimisation.Stochastic.BayesOpt
   build-depends:       base == 4.*,
-                       inline-c, vector
+                       inline-c, vector,
+                       mwc-random
   hs-source-dirs:      src
   c-sources:           src/Optimisation/Stochastic/BayesOpt.c
   cc-options:          -Wall -O2
